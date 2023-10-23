@@ -10,6 +10,9 @@
         </div>
     </div>
     <hr>
+    @if ($search == '')
+        
+    
     <div class="row">
             <table border="1"class="table table-primary">
             @foreach($read as  $item)
@@ -24,7 +27,10 @@
                
              </tr>
         @endforeach
+        @else <h2 class="text-center">Result Not Found</h2>
+        @endif
             </table>
+
     </div>
 
     </div>
